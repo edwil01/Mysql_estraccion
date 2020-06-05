@@ -4,8 +4,8 @@ SET sql_mode='STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISIO
 
 -- SELECT @@lc_time_names;
 -- set @day_offset = 1; -- sunday SET DATEFIRST 1 ;  
-/*
-insert into DPRODUCTO (  --L
+
+insert into DPRODUCTO ( 
 	Cod_prod,
     Nom_prod,
     Prec_compra,
@@ -56,8 +56,8 @@ insert into dvendedor (
 )
 SELECT  v.Nom_vend FROM farmadb.vendedor as v;
 
-*/
-insert into h_pedido (
+
+/*insert into h_pedido (
 	DTiem_id,
     DProd_id,
     DCli_id,
@@ -116,5 +116,5 @@ FROM (
 	GROUP BY DP.DProd_id, DT.DTiem_id, DCLI.DCli_id, DVEND.DVend_id
 ;
 
-
+*/
 

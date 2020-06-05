@@ -2,8 +2,8 @@ use farma_dmart_ped;
 SET lc_time_names = 'es_ES';
 -- SELECT @@lc_time_names;
 -- set @day_offset = 1; -- sunday SET DATEFIRST 1 ;  
-/*
-insert into dproducto (
+
+/*insert into dproducto (
 	Cod_prod,
     Nom_prod,
     Prec_compra,
