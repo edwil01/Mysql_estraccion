@@ -57,7 +57,7 @@ insert into dvendedor (
 SELECT  v.Nom_vend FROM farmadb.vendedor as v;
 
 
-/*insert into h_pedido (
+insert into h_pedido (
 	DTiem_id,
     DProd_id,
     DCli_id,
@@ -116,5 +116,5 @@ FROM (
 	GROUP BY DP.DProd_id, DT.DTiem_id, DCLI.DCli_id, DVEND.DVend_id
 ;
 
-*/
+
 

@@ -3,7 +3,7 @@ SET lc_time_names = 'es_ES';
 -- SELECT @@lc_time_names;
 -- set @day_offset = 1; -- sunday SET DATEFIRST 1 ;  
 
-/*insert into dproducto (
+insert into dproducto (
 	Cod_prod,
     Nom_prod,
     Prec_compra,
@@ -51,7 +51,7 @@ insert into dvendedor (
 )
 SELECT  v.Nom_vend FROM farmadb.vendedor as v;
 
-*/
+
 insert into h_pedido (
 	DTiem_id,
     DProd_id,

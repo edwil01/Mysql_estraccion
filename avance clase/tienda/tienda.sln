@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "tienda", "tienda\tienda.dwproj", "{AB4F53DE-6238-40B2-8410-6D45F5DB3BB2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB4F53DE-6238-40B2-8410-6D45F5DB3BB2}.Development|Default.ActiveCfg = Development
+		{AB4F53DE-6238-40B2-8410-6D45F5DB3BB2}.Development|Default.Build.0 = Development
+		{AB4F53DE-6238-40B2-8410-6D45F5DB3BB2}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {169BC5EE-2004-41B9-8626-063E68C9A216}
+	EndGlobalSection
+EndGlobal
