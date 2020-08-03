@@ -56,8 +56,8 @@ SELECT  v.nom_vend, v.cargo FROM sport_gumer.usu_vendedor as v;
 insert into hcompras (
 	Dfecha_id,
     Dproducto_id,
-    Dusuario_id,
     Dproveedor_id,
+    Dusuario_id,
 	cant_prod_comprados,
     costos
     
@@ -66,10 +66,9 @@ SELECT
 DF.Dfecha_id,
 DP.Dproducto_id,
 DPR.Dproveedor_id,
-DUSU.Dusuario_id,
+DUS.Dusuario_id,
 sum(G.Cantidad) as CANT_UNID,
 sum(G.Costos) as COSTOS
-
 FROM (
 	SELECT  
 		date_format(pe.fecha_hora, '%Y-%m-%d') AS fecha
@@ -93,7 +92,7 @@ FROM (
     inner join Dproducto AS DP ON G.codigo = DP.codigo
     inner join Dfecha AS DF ON G.fecha = DF.fecha
     inner join Dproveedor AS DPR ON G.nom_proveedor = DPR.nom_proveedor
-    inner join Dusuario AS DUSU ON G.nom_vend = DUSU.nom_vend
-	GROUP BY DP.Dproducto_id, DF.Dfecha_id, DPR.Dproveedor_id, DUSU.Dusuario_id
+    inner join Dusuario AS DUS ON G.nom_vend = DUS.nom_vend
+	GROUP BY DP.Dproducto_id, DF.Dfecha_id, DPR.Dproveedor_id, DUS.Dusuario_id
      
 ;

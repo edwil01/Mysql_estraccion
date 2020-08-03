@@ -1,5 +1,0 @@
-det_ingreso_id,ingreso_id,producto_id,cantidad,precio_compra,precio_venta
-1,1,1,100,13.00,20.00
-2,2,2,100,25.00,35.00
-3,2,3,100,25.00,35.00
-4,3,4,100,40.00,50.00
